@@ -1,0 +1,44 @@
+QUESTION 1
+
+ $env:DOCKER_HOST="tcp://52.204.127.145:2375"
+    docker version
+    cd .\Desktop\exam
+    docker build -t alpine:gauri .
+    docker volume create gauriv1
+    docker run --name gauric1q1 -v gauriv1/question1.txt alpine:gauri sh
+    12:09:49
+    docker start gauric1q1
+    docker exec -it gauric1q1
+    12:12:12
+
+
+QUESTION 2
+        docker build -t adhoc:gauri .
+	docker run --name gauric1q2 adhoc:gauri20
+	13:36:51
+	docker login
+	 docker tag adhoc:gauri20 gauri20/adhoc:gauri20
+	docker push gauri20/adhoc:gauri20
+
+
+QUESTION 3
+	docker pull dockerashu/ckad:v2
+	docker run --name gauric3q3 -p 2000:80 ckad:v2
+	
+
+QUESTION 4
+
+	docker build -t gauri:q4 .
+	docker run --name gauric4q4 -p 9099:80 gauri:q4
+	
+QUESTION 5
+
+	docker volume create gauriq5
+	
+	
+
+
+	
+	
+	
+	
