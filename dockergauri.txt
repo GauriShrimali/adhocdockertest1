@@ -23,16 +23,29 @@ QUESTION 2
 
 QUESTION 3
 	docker pull dockerashu/ckad:v2
-	docker run --name gauric3q3 -p 2000:80 ckad:v2
+	docker run -d --name gauric3q3 -p 2044:80 dockerashu/ckad:v2
+	Dockerfile:
+		from python
+                maintainer gaurishrimali20@gmail.com
+                run mkdir /exam
+                copy abc.py  /exam/test.py
+                cmd python /exam/test.py
 	
 
 QUESTION 4
 
 	docker build -t gauri:q4 .
+
+	Dockerfile:
+		FROM centos
+		MAINTAINER gaurishrimali20@gmail.com
+		ADD . https://github.com/redashu/beginner-html-site-styled.git
+		RUN yum install httpd -y
+		EXPOSE 80
+		ENTRYPOINT httpd -DFOREGROUND
 	docker run --name gauric4q4 -p 9099:80 gauri:q4
 	
 QUESTION 5
-
 	docker volume create gauriq5
 	
 	
